@@ -1,0 +1,15 @@
+double x = Convert.ToDouble(Console.ReadLine());
+double y = Convert.ToDouble(Console.ReadLine());
+
+double r = Math.Sqrt(y * y + x * x);
+
+if (x > 0)
+{
+    if (r <= 1 & y >= x) Console.WriteLine(x + y);
+    else Console.WriteLine(x - y);
+}
+else
+{ 
+    if (r <= 1 & y >= -x) Console.WriteLine(x + y); 
+    else Console.WriteLine(x - y);
+}
