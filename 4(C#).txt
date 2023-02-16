@@ -1,0 +1,12 @@
+double x = Convert.ToDouble(Console.ReadLine());
+double y = Convert.ToDouble(Console.ReadLine());
+
+double r = Math.Sqrt(y * y + x * x);
+
+if (x > 0)
+{
+    if (r >= 0.3 & r <= 1 & y >= 0) Console.WriteLine("0");
+    else Console.WriteLine(y);
+}
+else
+{ if (r <= 1) Console.WriteLine("0"); }
