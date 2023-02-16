@@ -1,0 +1,24 @@
+int a = Convert.ToInt32(Console.ReadLine());
+int x; int y = 0;
+string chislo = a.ToString();
+
+x = a % 10;
+a /= 10;
+string obr_chislo = x.ToString();
+
+while (a > 0)
+{
+    x = a % 10;
+    a /= 10;
+    obr_chislo += x.ToString();
+    y++;
+    if (obr_chislo == chislo)
+    {
+        Console.WriteLine("true");
+        y--;
+    }
+    if (y == 3) 
+    { 
+        Console.WriteLine("false");
+    }
+}
