@@ -1,0 +1,10 @@
+double P = Convert.ToDouble(Console.ReadLine());
+double summ = 1000;
+int K = 0;
+
+while (summ <= 1100)
+{
+    summ += summ * P / 100;
+    K++;
+    if (summ > 1100) Console.WriteLine($"{K}, {summ}");
+}
