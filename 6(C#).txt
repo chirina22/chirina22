@@ -1,0 +1,18 @@
+int N = Convert.ToInt32(Console.ReadLine());
+double A = Convert.ToDouble(Console.ReadLine());
+double B = Convert.ToDouble(Console.ReadLine());
+
+double H = (B - A) / N;
+Console.WriteLine(H.ToString());
+double var = A;
+
+for (int i = 0; i < N; i++)
+{
+    var += H;
+    if (i == 0)
+    {
+        Console.WriteLine(A);
+        Console.WriteLine(var);
+    }
+    else Console.WriteLine(var);
+}
