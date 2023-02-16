@@ -1,0 +1,5 @@
+int N = Convert.ToInt32(Console.ReadLine());
+double A = Convert.ToDouble(Console.ReadLine());
+
+double var = Math.Pow(A, N);
+Console.WriteLine(var);
